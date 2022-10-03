@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function nameIt() {
+            var name = document.getElementById("name").value;
+            alert("Hello " + name + ", Welcome to my site!");
+        }
+    </script>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .boxstyle {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+        }
+
+        .boxtext {
+            padding: 10px;
+        }
+        
+        .btnposition {
+            position: absolute;
+            left: 700px;
+            top: 340px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <div class="boxstyle">
+                <div class="boxtext">
+                    <p>Input name here...</p>
+                    <input type="text" id="name">
+                    <button class="btnposition" onclick="return nameIt()">send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
